@@ -3,11 +3,9 @@ from termcolor import colored
 from tqdm import tqdm
 
 class Painel:
-    #title
     def __init__(self) -> None:
         self.__title = pyfiglet.figlet_format("Lookdir", font="doom")
         
-    #Painel 
     def paine_views(self):
         print(colored(self.__title, "blue"))
         print(colored("\tBy:Arch_0x3f5",'cyan'))
