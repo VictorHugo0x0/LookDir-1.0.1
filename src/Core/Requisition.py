@@ -3,7 +3,7 @@ import asyncio
 from src.Model.LookDir import LookDir
 from termcolor import colored
 
-# Classe Requisições / Requests Class
+
 class Requesition(LookDir):
     def __init__(self) -> None:
         super().__init__()
@@ -16,4 +16,4 @@ class Requesition(LookDir):
                     else:
                         print(colored(f"URL: {self.url}/{dir.ljust(30)}\t STATUS:{response.status}", "yellow")) 
             except Exception as e:
-                print("Erro em requests:\n", e)  # Error in requests / Error in requests
+                print("Erro em requests:\n", e)
